@@ -12,7 +12,8 @@ def gen_qr(text, file_name):
     img = qr.make_image(fill_color="purple", back_color="black")
     img.save(file_name)
 
-text = "https://www.google.com/"
+# Ask the user for the website URL
+text = input("Enter the website URL: ")
 file_name = "qrcode.png"
 gen_qr(text, file_name)
 print(f"QR code saved as {file_name}")
